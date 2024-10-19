@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Books</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Custom styles for the bookstore page */
+        body {
+            background-color: #f8f8f8; /* Light gray background */
+            font-family: Arial, sans-serif; /* Clean font for readability */
+            color: #333; /* Default text color */
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: #fff; /* White background */
+            border: none; /* Remove border */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .navbar-brand {
+            font-weight: bold; /* Bold brand name */
+        }
+        .navbar-nav > li > a {
+            color: #555; /* Dark gray color for links */
+        }
+        .navbar-nav > li > a:hover {
+            color: #007bff; /* Primary color on hover */
+        }
+        /* Page heading styles */
+        h1 {
+            margin-top: 20px; /* Space above heading */
+            text-align: center; /* Center the heading */
+            color: #333; /* Dark color for the heading */
+        }
+        /* Card layout styles */
+        .card {
+            margin: 15px; /* Space between cards */
+            text-align: center; /* Center content in cards */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            overflow: hidden; /* Ensures content does not overflow */
+            transition: transform 0.2s; /* Smooth transform effect */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Slight lift effect on hover */
+        }
+        .card img {
+            width: 100%; /* Make image responsive */
+            height: 200px; /* Set fixed height for images */
+            object-fit: cover; /* Ensure images cover the area */
+        }
+        .card-body {
+            padding: 10px; /* Padding for card body */
+        }
+        .book-name {
+            margin: 10px 0; /* Margin for book name */
+            font-weight: bold; /* Bold font for book name */
+            font-size: 18px; /* Font size for book name */
+            color: #333; /* Dark text color */
+        }
+        .buy-button {
+            margin-top: 10px; /* Space between button and card */
+            background-color: #007bff; /* Primary button color */
+            border-color: #007bff; /* Button border color */
+        }
+        .buy-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            border-color: #004085; /* Darker border on hover */
+        }
+        /* Footer styles */
+        footer {
+            text-align: center; /* Centered text */
+            padding: 20px 0; /* Padding for footer */
+            background-color: #333; /* Dark footer background */
+            color: #fff; /* White text color */
+            margin-top: 20px; /* Space above footer */
+            position: relative; /* Position for footer */
+            bottom: 0; /* Stick to bottom */
+            width: 100%; /* Full width */
+        }
+        footer a {
+            color: #fff; /* White color for footer links */
+        }
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.php">Book Heaven</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.php" style="font-size: 18px; font-weight: bold;">Home</a></li>
+            <li><a href="register.php" style="font-size: 18px; font-weight: bold;">Register</a></li>
+            <li><a href="signin.php" style="font-size: 18px; font-weight: bold;">Sign In</a></li>
+            <li><a href="aboutus.html" style="font-size: 18px; font-weight: bold;">About</a></li>
+            <li><a href="contactus.html" style="font-size: 18px; font-weight: bold;">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Our Products</h1>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/HarryPotter.jpg" alt="Book 1">
+                <div class="card-body">
+                    <div class="book-name">Harry Potter</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/War.jfif" alt="Book 2">
+                <div class="card-body">
+                    <div class="book-name">War & Peace</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo1.png" alt="Book 3">
+                <div class="card-body">
+                    <div class="book-name">The Apothacary Diaries</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo2.jfif" alt="Book 4">
+                <div class="card-body">
+                    <div class="book-name">the Diary of a Young girl
+                    </div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo3.jpg" alt="Book 5">
+                <div class="card-body">
+                    <div class="book-name">To Kill a Mocking bird</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo4.jfif" alt="Book 6">
+                <div class="card-body">
+                    <div class="book-name">Pride and Prejudice</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo5.jfif" alt="Book 7">
+                <div class="card-body">
+                    <div class="book-name">Cinderella</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo6.jfif" alt="Book 8">
+                <div class="card-body">
+                    <div class="book-name">Little Red Riding Hood</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo7.jfif" alt="Book 9">
+                <div class="card-body">
+                    <div class="book-name">Treasure Island</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo8.jfif" alt="Book 10">
+                <div class="card-body">
+                    <div class="book-name">Into the wild</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo9.jfif" alt="Book 11">
+                <div class="card-body">
+                    <div class="book-name">The Hobbit</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="col-sm-4">
+            <div class="card">
+                <img src="./img/Photo10.jfif" alt="Book 12">
+                <div class="card-body">
+                    <div class="book-name">Odyssey</div>
+                    <button class="btn btn-primary buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Bookstore. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
